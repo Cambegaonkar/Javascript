@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="JS/main.js"></script>
+      <title> Fitness Track </title>
+      <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').animate({
+                        'height': '0'
+                    }, 500);
+                    $(this).closest('.faq').removeClass('open');
+
+                } else {
+                    var newHeight = $(this).closest('.faq').find('.faq_answer').height() + 'px';
+                    $(this).closest('.faq').find('.faq_answer_container').animate({
+                        'height': newHeight
+                    }, 500);
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+
+        });
+
+    </script>
+  </head>
+    
+  <body> 
+           <div id="wrapper">
+      <header>    
+            <h1> Fitness Track </h1>
+            <img src="Images/logo.png" width="120px" height="120px" alt="Logo">
+      </header>
+    	   <br>
+	   	   <nav>
+		   <div class="topnav">
+           <a href="index.html">Home</a>
+           <a href="coach.html">Coaching</a>
+		   <a href="book.html">Book Appointment</a>
+           <a href="login.html">Login</a>
+           <a href="contact.html">Contact Us</a>
+           <a class="active" href="#faq.html">FAQ</a>
+           </div>
+		   </nav>
+           <br>
+       <main>
+             <h1>Frequently Asked Questions:</h1>
+        <div class="faq_container">
+            <div class="faq">
+                <div class="faq_question">Q:How much does fitted cost per month?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:We have a few different options when it comes to memberships. Along with those options we have monthly incentives we offer for joining. To get more information, head to our website.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:Is there a contract?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:No. We do not offer any contracts. When you sign up we will never require social security numbers or anything that locks you into a contract. We offer both prepaid and month to month options. We don’t like contracts very much, we figured you wouldn’t either.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:What is the membership cancellation policy?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:We have a very simple cancellation policy, simply give us a 14 day notice to cancel your membership and you won’t get billed any longer.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:Can I put my membership on hold?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:Of course, we don’t want to see you leave. We can always put your membership on a freeze for $15 per month.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:How much does a Personal Trainer cost?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:We offer a wide variety of Personal Training options. Speak with an Associate at your club to find out more information.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:What is Workout to Win?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:This is a fantastic program where we give you the opportunity to win cash, just for working out! Each time you work out, get a signature from an Associate on your workout card at the front desk. For every 6 workouts you complete, you are given a ballot for a monthly draw to be one of four national winners of $250. Ask an Associate at the front desk for your workout card to start tracking your workouts today!.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:How do I make a ‘Donation’ request?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:Insert your location information, and then select ‘Donation Request’ from the drop-down and complete the designated form. This form is for the request of Complimentary Memberships and GoodLife Fitness swag only and does not include financial contributions (eg. t-shirts, water bottles, gym bags, etc.). Due to the large volume of requests, we require a minimum of 4-6 weeks advanced notice.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:With my Membership, am I able to use an Energie Cardio Club?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:Members are eligible to use Energie Cardio Clubs for up to 12 visits, every three months. Please bring your Membership key tag and photo identification when visiting an Energie Cardio Club. For more details, please speak with an Associate at your GoodLife Fitness Club of choice.</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:What do I bring/wear to the gym?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:Pack your gym bag with the following items to have a successful first visit and a great experience every time: 
+                   - A lock to keep your belongings safe (we recommend that you do not bring any items of value to the Club, if possible).
+                   - A workout towel to wipe down the equipment after use. Paper towels are also provided.
+                   - A water bottle
+                   - Workout clothes & appropriate gym shoes</div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_question">Q:What should I have received with my Membership?</div>
+                <div class="faq_answer_container">
+                    <div class="faq_answer">A:- Membership card
+                      - Living the Good Life book
+                      - Gym bag
+                      - Starter Appointments
+                      - Fitness Schedule
+                      - Access to the Club App</div>
+                </div>
+            </div>
+        </div>
+
+    	</main>
+               <br>
+        <footer>
+				<h2>Sign Up For Newsletter</h2>
+				<h3>Subscribe to our newsletter and always be the first to hear about what is happening.</h3>
+				<div class="logo">
+				<h3>Give Us Feedback:</h3>
+                <img src="Images/gmail_logo_PNG6.png" width="25px" height="25px" align="right">
+				<img src="Images/download.png" width="25px" height="25px" align="right">
+				</div>
+                <i>Copyright &copy; 2018 Fitness Track</i>
+            <div>
+            <a href="mailto:chitrangi@ambegaonkar.com">chitrangi@ambegaonkar.com</a> &nbsp; 
+            </div>
+       </footer>
+       </div>
+    </body>
+</html>

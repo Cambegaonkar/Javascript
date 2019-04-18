@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="JS/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	  <script src="JS/form.js"></script>
+      <title> Fitness Track </title>
+      <meta charset="utf-8">
+  </head>
+    
+  <body> 
+           <div id="wrapper"> 
+      <header>    
+            <h1> Fitness Track </h1>
+            <img src="Images/logo.png" width="120px" height="120px" alt="Logo">
+      </header>
+    	   <br>
+	   	   <nav>
+		   <div class="topnav">
+           <a href="index.html">Home</a>
+           <a href="coach.html">Coaching</a>
+		   <a class="active" href="#book.html">Book Appointment</a>
+           <a href="login.html">Login</a>
+           <a href="contact.html">Contact Us</a>
+           <a href="faq.html">FAQ</a>
+           </div>
+		   </nav>
+           <br>
+       <main>
+           <h1>Reservation Request</h1>
+           <div class="submit">
+	<form action="response.html" method="get"
+    	name="reservation_form" id="reservation_form">
+		<fieldset>
+        	<legend>General Information</legend>
+        	<label for="arrival_date">Arrival date:</label>
+        	<input type="text" name="arrival_date" id="arrival_date" autofocus>
+        	<br>
+        	<label for="nights">Months:</label>
+        	<input type="text" name="months" id="months" required>
+        	<br>
+        	<label>Adults:</label>
+        	<select name="adults" id="adults" required>
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>        		        		        		
+        	</select><br>
+        	<label>Children:</label>
+        	<select name="children" id="children" required>
+        		<option value="0">0</option>
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>        		        		        		
+        	</select><br>        	
+		</fieldset>
+		<fieldset>
+        	<legend>Preferences</legend>
+        	<label>Facitity type:</label>
+			<input type="radio" name="room" id="standard" class="left" checked >Standard&nbsp;&nbsp;&nbsp;	        	
+			<input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="room" id="suite" class="left last">Suite<br>
+        	<label>Exercise type:</label>
+			<input type="radio" name="bed" id="king" class="left" checked>Individual&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="bed" id="double" class="left last">Dual<br>
+			<input type="checkbox" name="smoking" id="smoking">Group<br>
+		</fieldset>		
+		<fieldset>
+    		<legend>Contact Information</legend>
+    		<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+			<br>
+        	<label for="email">Email:</label>
+        	<input type="text" name="email" id="email">
+            <br>
+			<label for="phone">Phone:</label>
+			<input type="text" name="phone" id="phone" placeholder="999-999-9999">
+           <br>
+		</fieldset>
+
+		<input type="submit" id="submit" value="Submit Request"><br>
+
+	</form>
+               </div>
+    	</main>
+               <br>
+        <footer>
+				<h2>Sign Up For Newsletter</h2>
+				<h3>Subscribe to our newsletter and always be the first to hear about what is happening.</h3>
+				<div class="logo">
+				<h3>Give Us Feedback:</h3>
+                <img src="Images/gmail_logo_PNG6.png" width="25px" height="25px" align="right">
+				<img src="Images/download.png" width="25px" height="25px" align="right">
+				</div>
+                <i>Copyright &copy; 2018 Fitness Track</i>
+            <div>
+            <a href="mailto:chitrangi@ambegaonkar.com">chitrangi@ambegaonkar.com</a> &nbsp; 
+            </div>
+       </footer>
+       </div>
+    </body>
+</html>

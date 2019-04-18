@@ -1,0 +1,311 @@
+*{
+    padding: 0px;margin: 0px;
+}
+
+body{
+    text-align: center;
+    text-decoration-color: #804000;
+    text-decoration-skip: edges;
+    font-family: cursive, inherit;
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+header {
+  border-right: 0px;
+  border-left: 0px;
+  }
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+p{
+    text-align: right;
+    margin-right: 115px;
+    margin-top: 30px;
+}
+
+wrapper{
+    
+    text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 40px;
+    text-decoration: none;
+    font-size: 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-left: 0px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+	text-align: center;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #804000;
+    color: white;
+	text-align: center;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.reference{
+    text-align: left;
+    padding: 50px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia sans-serif;
+    text-align: justify;
+}
+
+.imgGallary {
+    margin-top: 15px;
+    height: 800px;
+    width: 60%;
+    margin: auto;
+}
+
+.imgGallary img {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.imagesDesc {
+    padding-bottom: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 320px;
+    text-align: center;
+    background-color: #F9957F;
+}
+
+/* form */
+.submit{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    padding: 10px 20px;
+}
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+legend {
+    color: blue;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+label {
+	float: left;
+    width: 90px;
+}
+input, select {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+input {
+    width: 14em;	
+}
+input.left {
+	width: 1em;
+	padding-left: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+input.last {
+	margin-bottom: 1em;
+}
+#adults, #children {
+	width: 35px;
+}
+#smoking {
+	width: 1em;
+	margin-left: 0;
+}
+#submit {
+	margin-left: 0;
+	width: 10em;
+}
+span {
+	color: red;
+}
+
+/* slider */
+*
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*FAQS*/
+
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.faq {
+    padding: 10px;
+}
+
+.faq_container {
+    padding-top: 60px;
+}
+
+footer
+        {
+            background-color: #8c8c8c;
+            color:#333333;
+            font-size: 1em;
+            font-style: italic;
+            text-align: center;
+        }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Page Created By- Twinkle Harshadbhai Patel -->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/StyleSheet.css">
+       <link rel='stylesheet' href='css/fullcalendar.min.css' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src='js/moment.min.js'></script>
+    <script src='js/fullcalendar.js'></script>
+        <script src="js/login.js"></script>
+      
+    </head>
+<body>
+    <div id="wrapper">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <div class="nav">
+           <a href="Home.html" class="">Home</a>
+            <a href="addEvent.html" class="">Add/Edit</a>
+            <a href="showEvent.html" class="">View</a>
+             <a href="Login.html" class="actives">Login</a>
+        </div>
+
+        <main>
+                <div class="login">
+                    <h2>Login Form</h2>
+                    <br/>
+                    <div id="error"></div>
+                    <form id="form_id" method="post" name="myform">
+                        <label>Id </label>
+                        <input type="text" name="username" id="username" />
+                        <label>Password </label>
+                        <input type="password" name="password" id="password" />
+                        <input type="button" value="Login" id="submit" onclick="validate()" />
+                    </form>
+                </div>
+        </main>
+
+       <footer>
+       <br> <small><i>Copyright &copy; 2018 Livia Wedding planner</i></small><br><a href="mailto:twinkle@patel.com">Send Email</a>
+        </footer>
+    </div>
+</body>
+</html>
